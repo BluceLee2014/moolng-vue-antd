@@ -18,6 +18,30 @@ export default new Router({
       path: '/index',
       name: 'MoolngIndex',
       component: MoolngIndex
+    },
+    {
+      path: '/r1',
+      name: 'R1',
+      component: ()=> import('@/components/Router01'),
+      meta:{
+        title:'路由1'
+      }
+    },
+    {
+      path: '/r2',
+      name: 'R2',
+      component: ()=> import('@/components/Router02'),
+      meta:{
+        title:'路由2'
+      }
+    },
+    {
+      path: '/r3',
+      name: 'R3',
+      component: ()=> import('@/components/Router03'),
+      meta:{
+        title:'路由3'
+      }
     }
     // },
     // {
