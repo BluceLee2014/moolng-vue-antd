@@ -30,11 +30,11 @@
             }
         },
         created() {
-            console.log('-> created : ', this.$props.aname)
+            // console.log('-> created : ', this.$props.aname)
             this.$data.age = this.$props.aname
         },
         mounted() {
-            console.log('-> mounted : ', this.$props.aname)
+            // console.log('-> mounted : ', this.$props.aname)
         },
         render() {
 

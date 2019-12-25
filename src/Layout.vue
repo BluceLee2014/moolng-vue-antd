@@ -149,6 +149,7 @@
 
             },
             addTag(e) {
+              console.log(this.$route)
                 let val = e.key
                 let route = eval("(" + val + ")")
                 let item = e.item
@@ -229,10 +230,12 @@
             // this.a++
         },
         watch: {
-            // $route: {
-            // handler(){
-            //   this.addTag()
-            // }
+            $route: {
+            handler(){
+              // this.addTag()
+              console.log(this.$route)
+            }
+            }
 
             // handler:function(val, oldVal){
             //   this.$nextTick(function(){  //页面加载完成后执行
